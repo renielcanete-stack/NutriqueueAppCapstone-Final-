@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase-admin": "^14.2.0"
+  }
+  ,
+  "scripts": {
+    "dev": "concurrently \"node nutriqueue-backend/server.js\" \"python3 ml-service/app.py\"",
+    "start-backend": "node nutriqueue-backend/server.js",
+    "start-ml": "python3 ml-service/app.py"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

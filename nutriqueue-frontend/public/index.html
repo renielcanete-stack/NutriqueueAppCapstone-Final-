@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nutriqueue Dev UI</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header><h1>Nutriqueue - Dev Interface</h1></header>
+
+    <main>
+      <section>
+        <h2>Predict Risk (ML)</h2>
+        <label>Dish Name: <input id="dishName" value="Pork Adobo" inputmode="text"></label>
+        <label>User Vector (comma list): <input id="userVector" value="1,0,0,0,0" inputmode="numeric"></label>
+        <button id="predictRiskBtn">Predict Risk</button>
+        <div id="predictRiskOut" class="output"></div>
+      </section>
+
+      <section>
+        <h2>Predict Wait (Backend ML)</h2>
+        <label>Stall ID: <input id="waitStallId" value="test-stall" inputmode="text"></label>
+        <label>Items Count: <input id="itemsCount" value="3" type="number" inputmode="numeric"></label>
+        <button id="predictWaitBtn">Predict Wait</button>
+        <div id="predictWaitOut" class="output"></div>
+      </section>
+
+      <section>
+        <h2>Health Profile</h2>
+        <label>Student ID: <input id="studentId" value="2026-GSU-0101" inputmode="text"></label>
+        <button id="healthBtn">Get Profile</button>
+        <div id="healthOut" class="output"></div>
+      </section>
+
+      <section>
+        <h2>QR Route</h2>
+        <label>Stall ID: <input id="qrStallId" value="test-stall" inputmode="text"></label>
+        <button id="qrBtn">Route Stall</button>
+        <div id="qrOut" class="output"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
